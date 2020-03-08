@@ -11,19 +11,19 @@ The data indicates poor performance in 2018, showing a 62.6% loss, as summarized
 | 2018 | 107,873,900 | -62.6%|
 
 ### All Stocks Analysis
-The analysis of DQ was expanded upon so that all 12 stocks were included in the analysis for both years (2017 and 2018). The subroutine "All Stocks Analysis" (*AllStocksAnalysis()*) was written in VBA to perform the analysis. Additionally, the subroutine "Clear Worksheet"
+The analysis of DQ was expanded upon so that all 12 stocks were included in the analysis for both years (2017 and 2018). The subroutine *AllStocksAnalysis()* was written in VBA to perform the analysis. Additionally, the subroutine *ClearWorksheet()* was written to clear the analysis from the output worksheet, **All Stocks Analysis**.
 
 #### Explanation of VBA
-This macro involves the following variables:
-* yearValue (values = "2017" and "2018")
-* tickers() (Array of 12 tickers defined 'As String')
-* startingPrice (defined 'As Single')
-* endingPrice (defined 'As Single')
-* ticker (initialized as equal to the current ticker, tickers(i))
-* totalVolume (initialized as equal to zero so that it can be used in a sum)
-* RowCount (defined by formula to calculate number of rows in worksheet)
-* dataRowStart (created for the output sheet for the purposes of applying conditional formatting)
-* dataRowEnd (created for the output sheet for the purposes of applying conditional formatting)
+The macro *AllStocksAnalysis()* involves the following variables:
+* **yearValue** (values = "2017" and "2018")
+* **tickers()** (Array of 12 tickers defined 'As String')
+* **startingPrice** (defined 'As Single')
+* **endingPrice** (defined 'As Single')
+* **ticker** (initialized as equal to the current ticker, tickers(i))
+* **totalVolume** (initialized as equal to zero so that it can be used in a sum)
+* **RowCount** (defined by formula to calculate number of rows in worksheet)
+* **dataRowStart** (created for the output sheet for the purposes of applying conditional formatting)
+* **dataRowEnd** (created for the output sheet for the purposes of applying conditional formatting)
 
 The subroutine is broken down in the following steps:
 1. The user types the year upon which to perform the analysis (i.e. the user defines yearValue as "2017" or "2018").
